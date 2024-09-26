@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+    <style>
+        #b1{
+            border: 3px inset;
+        }
+        .form-header {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Centers the content horizontally */
+            gap: 10px; /* Adds space between logo and heading */
+        }
+
+        .form-logo {
+            width: 50px; /* Adjust the size of the logo */
+            height: auto;
+        }
+
+        .form-title {
+            font-size: 40px;
+            font-weight: bold;
+            color: red;
+        }
+        
+        
+    </style>
+    </style>
+</head>
+<body>
+    
+    <div class="form-header">
+        <img src="register.jpg" alt="Company Logo" class="form-logo">
+        <h2 class="form-title">Employee Registration Form</h2>
+    </div>
+    <form align="center">
+        <label>
+            <input type="radio" name="title" value="Mr."> Mr.
+        </label>
+        <label>
+            <input type="radio" name="title" value="Mrs."> Mrs.
+        </label>
+        <label>
+            <input type="radio" name="title" value="Ms."> Ms.
+        </label>
+
+        <br><br>
+
+        <label>First Name:</label>
+        <input id="b1" type="text" id="firstName" name="firstName"><br><br>
+
+        <label>Last Name:</label>
+        <input id="b1" type="text" id="lastName" name="lastName"><br><br>
+
+        <label>Mail Address1:</label>
+        <input  id="b1"type="text" id="mailAddress1" name="mailAddress1"><br><br>
+
+        <label>Mail Address2:</label>
+        <input id="b1" type="text" id="mailAddress2" name="mailAddress2"><br><br>
+
+        <label>City:</label>
+        <input id="b1" type="text" id="city" name="city"><br><br>
+
+        <label>State:</label>
+        <select id="state" name="state">
+            <option value="Gujarat">Gujarat</option>
+            <option value="Maharastra">Maharastra</option>
+        </select><br><br>
+
+        <label>Zip:</label>
+        <input id="b1" type="text" id="zip" name="zip"><br><br>
+
+        <label>Upload Photo:</label>
+        <input type="file" id="photo" name="photo"><br><br>
+
+        <label>E-Mail:</label>
+        <input id="b1" type="email" id="email" name="email"><br><br>
+
+        <label>Mobile:</label>
+        <input id="b1" placeholder="+91" type="tel" id="mobile" name="mobile" pattern="[+]{1}[0-9]{11,14}"><br><br>
+
+        <label>Languages known:</label><br>
+        <label>
+            <input type="checkbox" name="languages" value="Gujarati"> Gujarati
+        </label><br>
+        <label>
+            <input type="checkbox" name="languages" value="Hindi"> Hindi
+        </label><br>
+        <label>
+            <input type="checkbox" name="languages" value="English"> English
+        </label><br>
+        <label>
+            <input type="checkbox" name="languages" value="Marathi"> Marathi
+        </label><br><br>
+
+        <label>Additional Information:</label>
+        <textarea id="b1" placeholder="Optional" id="additionalInfo" name="additionalInfo" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+</body>
+</html>
